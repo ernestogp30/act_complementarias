@@ -59,7 +59,7 @@
 				        	?>
 				          <tr>
 							<td><?php echo $rs['clave_act']?></td>
-							<td><?php echo $rs['nombre']?></td>
+							<td><?php echo $rs['nombre_actividad']?></td>
 				          </tr>
 				          <?php
 				          	}

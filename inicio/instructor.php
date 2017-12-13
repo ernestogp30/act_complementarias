@@ -85,7 +85,7 @@ $results_status = $statement_status->fetchAll();
                 <footer class="page-footer teal lighten-2">
                     <div class="footer-copyright">
                         <div class="container">
-                            &copy; 2017 Leonel Gonz&aacute;lez Vidales
+                            &copy; 2017 Ernesto Garcia Pineda
                         </div>
                     </div>
                 </footer>
