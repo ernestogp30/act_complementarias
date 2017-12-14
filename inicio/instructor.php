@@ -67,9 +67,9 @@ $results_status = $statement_status->fetchAll();
 				        	?>
 				          <tr>
 							<td><?php echo $rs['rfc']?></td>
-							<td><?php echo $rs['nombre']?></td>
-							<td><?php echo $rs['apellido_p']?></td>
-							<td><?php echo $rs['apellido_m']?></td>
+							<td><?php echo $rs['nombre_instructor']?></td>
+							<td><?php echo $rs['apaterno_instructor']?></td>
+							<td><?php echo $rs['amaterno_instructor']?></td>
 							<td><?php echo $rs['act_complementaria_clave_act']?></td>
 
 				          </tr>

@@ -80,7 +80,7 @@ $results_status = $statement_status->fetchAll();
                         <?php
                         foreach($results as $rs) {
                             ?>
-                            <option value="<?php echo $rs['RFC']?>"><?php echo $rs['NombreTrabajador']?></option>
+                            <option value="<?php echo $rs['rfc_depto']?>"><?php echo $rs['NombreTrabajador']?></option>
                             <?php
                         }
                         ?>

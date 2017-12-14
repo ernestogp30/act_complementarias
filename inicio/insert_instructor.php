@@ -15,7 +15,7 @@ if( $_POST )
     $rfcInstructor = isset($_POST['RFC']) ? $_POST['RFC']: '';
     $nombreInstructor = isset($_POST['nombreInstructor']) ? $_POST['nombreInstructor']: '';
     $apellido_p_Instructor = isset($_POST['apellido_p_Instructor']) ? $_POST['apellido_p_Instructor']: '';
-    $apellido_m_Instructor = isset($_POST['apellido_m_Estudiante']) ? $_POST['apellido_m_Estudiante']: '';
+    $apellido_m_Instructor = isset($_POST['apellido_m_Instructor']) ? $_POST['apellido_m_Instructor']: '';
     $claveActividad = isset($_POST['claveActividad']) ? $_POST['claveActividad']: '';
     $nombreActividad = isset($_POST['nombreActividad']) ? $_POST['nombreActividad']: '';
 

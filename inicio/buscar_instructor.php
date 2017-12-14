@@ -38,13 +38,13 @@
 		<div class="container">
 			<div class="row">
 				<div class="col s12">
-					<h2>Buscar Actividad Complementaria</h2>
+					<h2>Buscar Instructores</h2>
 					<hr>
 					<form method="get">
                             <div class="row">
                                 <div class="col 12">
-                                    <label>Ingrese la actividad elegida
-                                    <input type="text" name="nombre_actividad" placeholder="ej. futbol">
+                                    <label>Ingrese el Instructor
+                                    <input type="text" name="nombre_instructor" placeholder="ej. Santiago">
                                     <input class="button" type="submit" value="BUSCAR"/>
                                     </label>
                             </div>
@@ -53,7 +53,7 @@
 						
 					</pre>
 						
-					<h3>Estudiantes</h3>
+					<h3>Instructores</h3>
 					<hr>
 					<table class="striped">
 				        <thead>

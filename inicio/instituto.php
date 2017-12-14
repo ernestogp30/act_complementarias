@@ -59,7 +59,7 @@
 				        	?>
 				          <tr>
 							<td><?php echo $rs['clave']?></td>
-							<td><?php echo $rs['nombre']?></td>
+							<td><?php echo $rs['NombreInstituto']?></td>
 
 				          </tr>
 				          <?php 

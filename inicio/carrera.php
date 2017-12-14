@@ -57,8 +57,8 @@
 				        		foreach($results as $rs) {
 				        	?>
 				          <tr>
-							<td><?php echo $rs['clave']?></td>
-							<td><?php echo $rs['nombre']?></td>
+							<td><?php echo $rs['Clave']?></td>
+							<td><?php echo $rs['nombre_carrera']?></td>
 				          </tr>
 				          <?php
 				          	}
@@ -71,7 +71,7 @@
                 <footer class="page-footer teal lighten-2">
                     <div class="footer-copyright">
                         <div class="container">
-                            &copy; 2017 Leonel Gonz&aacute;lez Vidales
+                            &copy; 2017 Ernesto Garcia Pineda
                         </div>
                     </div>
                 </footer>

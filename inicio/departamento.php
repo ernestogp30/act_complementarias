@@ -59,8 +59,8 @@
 				        		foreach($results as $rs) {
 				        	?>
 				          <tr>
-							<td><?php echo $rs['rfc']?></td>
-							<td><?php echo $rs['nombre']?></td>
+							<td><?php echo $rs['rfc_depto']?></td>
+							<td><?php echo $rs['DeptoNombre']?></td>
 							<td><?php echo $rs['trabajador_rfc']?></td>
 
 
@@ -77,7 +77,7 @@
                 <footer class="page-footer teal lighten-2">
                     <div class="footer-copyright">
                         <div class="container">
-                            &copy; 2017 Leonel Gonz&aacute;lez Vidales
+                            &copy; 2017 Ernesto Quintín García Pineda
                         </div>
                     </div>
                 </footer>

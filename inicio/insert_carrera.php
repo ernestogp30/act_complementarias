@@ -77,7 +77,7 @@ $results_status = $statement_status->fetchAll();
     </div>
     <div class="row">
         <div class="col s12">
-            <h3>Estudiantes</h3>
+            <h3>Carreras</h3>
             <table class="striped">
                 <thead>
                 <tr>
