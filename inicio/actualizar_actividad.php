@@ -67,7 +67,6 @@ $results_status = $statement_status->fetchAll();
 							</div>
 							<div class="row">
         						<div class="input-field col s4">
-<!--        							<i class="material-icons prefix">account_circle</i>-->
           							<input value="<?php echo $rs_details['nombre_actividad'] ?>" name="ActividadNombre" type="text">
         					</div>
         						
@@ -93,7 +92,7 @@ $results_status = $statement_status->fetchAll();
 							<td><?php echo $rs2['nombre_actividad']?></td>
 							
 							<td><a class="btn waves-effect waves-light" href="actualizar_actividad.php
-							?No_contro=<?php echo $rs2['clave_act']; ?>">VER DETALLES</a></td>
+							?clave_act=<?php echo $rs2['clave_act']; ?>">VER DETALLES</a></td>
                             <td><a class="btn waves-effect waves-light red" onclick="delete_actividad(<?php echo $rs2['clave_act']; ?>)" href="#">ELIMINAR</a>
 					    </tr>
 					    <?php

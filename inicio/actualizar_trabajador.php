@@ -3,7 +3,7 @@
 	$title = 'Trabajadores';
 	$title_menu = 'Trabajadores';
 
-	// Consulta para mostrar los datos de la tabla "Carrera"
+	// Consulta para mostrar los datos de la tabla "Trabajador"
 	$sql_trabajador = 'SELECT * FROM trabajador';
 	$statement = $pdo->prepare($sql_trabajador);
 	$statement->execute();
@@ -22,7 +22,10 @@
   		$apellidoPTrabajador = isset($_POST['apellido_p_trabajador']) ? $_POST['apellido_p_trabajador']: '';
   		$apellidoMTrabajador = isset($_POST['apellido_m_trabajador']) ? $_POST['apellido_m_trabajador']: '';
   		$ClavePresupuestal = isset($_POST['clave_presupuestal']) ? $_POST['clave_presupuestal']: '';
-  	
+ 
+echo $RFCtrabajador;
+echo $amaterno_trabajador;	
+
 
 	  	$statement_update_details = $pdo->prepare($sql_update_details);
 	  	$statement_update_details->execute(array($rfcTrabajador_2,$nombreTrabajador,$apellidoPTrabajador,$apellidoMTrabajador,$ClavePresupuestal, $rfcTrabajador));
@@ -73,12 +76,12 @@ $results_status = $statement_status->fetchAll();
       						
           							<input value="<?php echo $rs_details['NombreTrabajador'] ?>" name="nombreTrabajador" type="text">
         						</div>
+        						
         						<div class="input-field col s4">
-
           							<input value="<?php echo $rs_details['apellido_p_trabajador'] ?>" name="apellidoPTrabajador" type="text">
         						</div>
+        						
         						<div class="input-field col s4">
-
           						<input value="<?php echo $rs_details['apellido_m_trabajador'] ?>" name="apellidoMTrabajador" type="text">
         						</div>
         					</div>
@@ -112,11 +115,10 @@ $results_status = $statement_status->fetchAll();
 					    	<td><?php echo $rs2['RFC']?></td>
 							<td><?php echo $rs2['NombreTrabajador']?></td>
 							<td><?php echo $rs2['apellido_p_trabajador']?></td>
-							<td><?php echo $rs2['apellido_p_trabajador']?></td>
+							<td><?php echo $rs2['apellido_m_trabajador']?></td>
 							<td><?php echo $rs2['clave_presupuestal']?></td>
-							
 							<td><a class="btn waves-effect waves-light" href="actualizar_trabajador.php
-							?No_contro=<?php echo $rs2['RFC']; ?>">VER DETALLES</a></td>
+							?RFC=<?php echo $rs2['RFC']; ?>">VER DETALLES</a></td>
                             <td><a class="btn waves-effect waves-light red" onclick="delete_trabajador(<?php echo $rs2['RFC']; ?>)" href="#">ELIMINAR</a>
 					    </tr>
 					    <?php

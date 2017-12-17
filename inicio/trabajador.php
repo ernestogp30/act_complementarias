@@ -61,10 +61,10 @@
 				        		foreach($results as $rs) {
 				        	?>
 				          <tr>
-							<td><?php echo $rs['rfc']?></td>
-							<td><?php echo $rs['nombre']?></td>
-							<td><?php echo $rs['apellido_p']?></td>
-							<td><?php echo $rs['apellido_m']?></td>
+							<td><?php echo $rs['RFC']?></td>
+							<td><?php echo $rs['NombreTrabajador']?></td>
+							<td><?php echo $rs['apellido_p_trabajador']?></td>
+							<td><?php echo $rs['apellido_m_trabajador']?></td>
 							<td><?php echo $rs['clave_presupuestal']?></td>
 
 				          </tr>
@@ -80,7 +80,7 @@
                 <footer class="page-footer teal lighten-2">
                     <div class="footer-copyright">
                         <div class="container">
-                            &copy; 2017 Leonel Gonz&aacute;lez Vidales
+                            &copy; 2017 LErnesto Quintín García Pineda.
                         </div>
                     </div>
                 </footer>

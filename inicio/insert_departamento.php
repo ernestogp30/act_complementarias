@@ -23,7 +23,7 @@ if( $_POST )
 
 }
 
-$sql_status = 'SELECT departamento.*, trabajador.NombreTrabajador FROM departamento INNER JOIN trabajador ON trabajador.RFC = departamento.trabajador_RFC ;
+$sql_status = 'SELECT departamento.*, trabajador.NombreTrabajador FROM departamento INNER JOIN trabajador ON trabajador.RFC = departamento.trabajador_RFC' ;
 $statement_status = $pdo->prepare($sql_status);
 $statement_status->execute();
 $results_status = $statement_status->fetchAll();
@@ -80,7 +80,7 @@ $results_status = $statement_status->fetchAll();
                         <?php
                         foreach($results as $rs) {
                             ?>
-                            <option value="<?php echo $rs['rfc_depto']?>"><?php echo $rs['NombreTrabajador']?></option>
+                            <option value="<?php echo $rs['RFC']?>"><?php echo $rs['NombreTrabajador']?></option>
                             <?php
                         }
                         ?>

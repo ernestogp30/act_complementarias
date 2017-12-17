@@ -19,6 +19,8 @@ if( $_POST )
     $claveActividad = isset($_POST['claveActividad']) ? $_POST['claveActividad']: '';
     $nombreActividad = isset($_POST['nombreActividad']) ? $_POST['nombreActividad']: '';
 
+
+
     $statement_insert = $pdo->prepare($sql_insert);
     $statement_insert->execute(array($rfcInstructor,$nombreInstructor,$apellido_p_Instructor, $apellido_m_Instructor,$claveActividad,));
 

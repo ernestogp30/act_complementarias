@@ -52,6 +52,17 @@
                 }
             }
         </script>
+        <script>
+            function delete_instructor (id_to_delete)
+            {
+                var confirmation = confirm('¿Está seguro de que desea eliminar al instructor con el RFC '+ id_to_delete);
+
+                if(confirmation)
+                {
+                    window.location = "delete_instructor.php?rfc="+id_to_delete;
+                }
+            }
+        </script>
 		</head>
 
 	<body>

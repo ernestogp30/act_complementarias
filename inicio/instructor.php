@@ -20,7 +20,7 @@ $results_status = $statement_status->fetchAll();
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<title>PHP & SQL</title>
+		<title>INSTRUCTORES</title>
 		<link rel="stylesheet" href="../css/materialize.min.css">
 		</head>
 
@@ -43,7 +43,7 @@ $results_status = $statement_status->fetchAll();
 				<div class="col s12">
 					<h2>Ejecución de una sentencia SQL</h2>
 					<hr>
-					<h3>Datos SQL</h3>
+					<h3>Control de Registro</h3>
 					<pre>
 						
 					</pre>

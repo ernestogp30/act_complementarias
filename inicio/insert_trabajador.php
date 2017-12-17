@@ -18,8 +18,7 @@ if( $_POST )
     $amaterno_trabajador= isset($_POST['amaterno_trabajador']) ? $_POST['amaterno_trabajador']: '';
     $clavePresupuestal = isset($_POST['clavePresupuestal']) ? $_POST['clavePresupuestal']: '';
 
-echo $RFCtrabajador;
-echo $amaterno_trabajador;
+
 
     $statement_insert = $pdo->prepare($sql_insert);
     $statement_insert->execute(array($RFCtrabajador,$nombreTrabajador ,$apaterno_trabajador, $amaterno_trabajador, $clavePresupuestal));
